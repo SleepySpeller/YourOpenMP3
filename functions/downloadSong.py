@@ -1,20 +1,20 @@
-from pytube import YouTube
 import os
 from colorama import Fore
+import youtube_dl
 
-def get_mp3(url, title):
-    try:
-        my_video = YouTube(url)
-    except Exception as e:
-        print(Fore.RED + "An error has occured while trying to donwload your song! " + e)
-        os.system("pause")
-    
-    
-    try:
-        audio = my_video.streams.get_audio_only()
-        myAudio = my_video.streams.filter(only_audio=True).first().download(filename = "songs/" + title + ".mp3")
-        print(Fore.GREEN + f"The song \"{title}\" has been downloaded successfully!")
-        os.system("pause")
-    except Exception as exception:
-        print(Fore.RED + "An error has occured!" + exception)
-        os.system("pause")
+def get_mp3(url):
+    ydl_opts = {
+        'format': 'bestaudio/best',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+    }
+
+    os.chdir("songs")
+
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
+
+    os.system("cls"); print(Fore.GREEN + "The song has been successfully downloaded!"); os.system("pause")

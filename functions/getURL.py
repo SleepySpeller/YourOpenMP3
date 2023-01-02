@@ -30,14 +30,5 @@ def getSongUrlByName(wantedSongName):
 
         answer = input(Fore.YELLOW + "Is the song correct? (y/n)")
         if answer == "y":
-            return finalURL, title
+            return finalURL
         os.system("cls")
-    
-
-
-    
-
-
-
-
-

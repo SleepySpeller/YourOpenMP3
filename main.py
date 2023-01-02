@@ -29,7 +29,7 @@ def onRun():
         
     while True:
         os.system("cls")
-        print(Fore.CYAN + "Welcome to the Sleepy MP3 Downloader!")
+        print(Fore.CYAN + "Welcome to YourOpenMP3!")
         print(Fore.WHITE + "What would you like to do?")
         print(Fore.YELLOW + "1. Download a song by its name\n2. Download a song by its url")
 
@@ -40,12 +40,12 @@ def onRun():
             wantedSongName = input(Fore.WHITE + "Type the name of the song you want to download > ")
             songURL = getURL.getSongUrlByName(wantedSongName)
             print("")
-            downloadSong.get_mp3(songURL[0], songURL[1])
+            downloadSong.get_mp3(songURL)
 
         elif(answer == "2"):
             #add code to automatically download the song from the fucntions.downloadsong using the url provided
             wantedSongURL = input(Fore.WHITE + "Type the url of the song you want to download > ")
-            downloadSong.get_mp3(wantedSongURL, "")
+            downloadSong.get_mp3(wantedSongURL)
         else:
             print(Fore.RED + "Please choose 1 or 2")
             os.system("pause")
