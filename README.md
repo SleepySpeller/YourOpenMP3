@@ -20,7 +20,7 @@ You need Python 3.10 or above <br>
 You will need to install external modules using pip:
 * PyTube
 ```
-pip install pytube
+pip install youtube_dl
 ```
 * Colorama
 ```
