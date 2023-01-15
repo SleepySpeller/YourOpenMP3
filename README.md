@@ -10,9 +10,10 @@ Supported Platforms: Windows
 <br>
 Linux and MacOS support will be coming in the future <br>
 <br>
-Modules that are required to be installed manually:
+Modules & Software that needs to be installed manually:
 * PyTube
 * Colorama
+* Chocolatey & FFMPEG
 
 ### Installing
 You need Python 3.10 or above <br>
@@ -25,6 +26,10 @@ pip install pytube
 ```
 pip install colorama
 ```
+
+<br>
+
+You will also need [Chocolatey](https://chocolatey.org/) and [FFMPEG](https://community.chocolatey.org/packages/ffmpeg)
 
 ### Running the program
 Download the source code and run the main.py file in a Command Prompt
