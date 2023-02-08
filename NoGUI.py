@@ -1,10 +1,7 @@
-import functions.getURL as getURL
-import functions.downloadSong as downloadSong
+import getURL as getURL
+import downloadSong as downloadSong
 import os
 from colorama import Fore
-
-import os
-
 
 def setup():
     try:
