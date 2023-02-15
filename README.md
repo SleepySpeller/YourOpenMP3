@@ -12,6 +12,7 @@ Linux and MacOS support will be coming in the future <br>
 <br>
 Modules & Software that needs to be installed manually:
 * PyTube
+* Youtube-DL
 * Colorama
 * Chocolatey & FFMPEG
 
@@ -26,13 +27,16 @@ pip install youtube_dl
 ```
 pip install colorama
 ```
-
+* youtube-dl
+```
+pip install youtube-dl
+```
 <br>
 
 You will also need [Chocolatey](https://chocolatey.org/) and [FFMPEG](https://community.chocolatey.org/packages/ffmpeg)
 
 ### Running the program
-Download the source code and run the main.py file in a Command Prompt
+Download the source code and run the GUI.py file in a Command Prompt
 
 # Authors
 Software made by [@SleepySpeller](https://github.com/SleepySpeller/)
