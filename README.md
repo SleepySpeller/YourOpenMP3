@@ -11,17 +11,16 @@ Supported Platforms: Windows
 Linux and MacOS support will be coming in the future <br>
 <br>
 Modules & Software that needs to be installed manually:
-* PyTube
+* yt-dlp
 * Youtube-DL
-* Colorama
-* Chocolatey & FFMPEG
+* FFMPEG
 
 ### Installing
-You need Python 3.10 or above <br>
-You will need to install external modules using pip:
-* PyTube
+Python 3.10 or above is required <br>
+External modules:
+* yt_dlp
 ```
-pip install pytube
+pip install yt_dlp
 ```
 * Colorama
 ```
@@ -33,7 +32,9 @@ pip install youtube-dl
 ```
 <br>
 
-You will also need [Chocolatey](https://chocolatey.org/) and [FFMPEG](https://community.chocolatey.org/packages/ffmpeg)
+[FFMPEG](https://www.gyan.dev/ffmpeg/builds/#release-builds) is also required.
+
+<br>
 
 ### Running the program
 Download the source code and run the GUI.py file in a Command Prompt

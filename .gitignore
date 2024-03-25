@@ -132,4 +132,5 @@ dmypy.json
 songs
 test.py
 tests.py
+progress_hooks.py
 /tests
