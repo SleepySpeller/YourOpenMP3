@@ -29,7 +29,7 @@ def button_download():
         download_status.configure(text="Preparing...")
         download_status.pack(padx=10, pady=10)
         
-        b = threading.Thread(name="background_download", target=dlpHandler.get_mp3, args=(text, download_status, progressbar))
+        b = threading.Thread(name="background_download", target=dlpHandler.get_mp3, args=(text, download_status, playlist_status, song_status))
         b.start()
 
 title = customtkinter.CTkLabel(master=frame_1, justify=customtkinter.LEFT, text="YourOpenMP3", font=('segoe', 35))
@@ -46,6 +46,8 @@ download_button.pack(pady=10, padx=10)
 
 progressbar = customtkinter.CTkProgressBar(master=frame_1)
 
+song_status = customtkinter.CTkLabel(master=frame_1, justify=customtkinter.LEFT, text="")
 download_status = customtkinter.CTkLabel(master=frame_1, justify=customtkinter.LEFT, text="Preparing...")
+playlist_status = customtkinter.CTkLabel(master=frame_1, justify=customtkinter.LEFT, text="")
 
 app.mainloop()
