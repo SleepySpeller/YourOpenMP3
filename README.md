@@ -1,22 +1,22 @@
 # YourOpenMP3
 
 YourOpenMP3 is Open-Source software used for Downloading MP3 Songs from youtube. <br>
-The development is currently in the alpha stage, so any feedback on it would be appreciated
+The development is currently in the early stages, thus feedback is heavily appreciated
 
 # Getting Started
 
 ### Dependencies
 Supported Platforms: Windows
 <br>
-Linux and MacOS support will be coming in the future <br>
+Linux support is planned, but no plans for MacOS for now<br>
 <br>
-Modules & Software that needs to be installed manually:
+Modules & Software that needs to be installed manually (will be automatic later):
 * yt-dlp
 * Youtube-DL
 * FFMPEG
 
 ### Installing
-Python 3.10 or above is required <br>
+Python 3.12 or above is recommended <br>
 External modules:
 * yt_dlp
 ```
@@ -33,11 +33,12 @@ pip install youtube-dl
 <br>
 
 [FFMPEG](https://www.gyan.dev/ffmpeg/builds/#release-builds) is also required.
+You can follow [this guide](https://www.wikihow.com/Install-FFmpeg-on-Windows) to install ffmpeg for Windows.
 
 <br>
 
 ### Running the program
-Download the source code and run the GUI.py file in a Command Prompt
+Download the latest release, extract and run GUI.py
 
 # Authors
 Software made by [@SleepySpeller](https://github.com/SleepySpeller/)
